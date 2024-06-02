@@ -230,6 +230,7 @@ img {
 
 .home__description {
   font-weight: normal;
+  width: 80%;
 }
 
 .home__button {
