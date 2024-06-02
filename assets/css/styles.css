@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 /*----- VARIABLES CSS Y SASS -----*/
 /*Varibles sass*/
 /*Variables css*/
@@ -473,6 +474,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 50px;
 }
 
 .projects__section {
@@ -520,6 +522,109 @@ img {
 .projects__description .time {
   font-weight: normal;
   font-size: 20px;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 150px;
+  margin-top: 100px;
+}
+
+.contact .heading {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+}
+
+.contact__links {
+  font-weight: normal;
+  width: 40%;
+}
+
+.contact__link {
+  margin: 30px;
+}
+
+.contact__link .label {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: gray;
+}
+
+.contact__link .link {
+  margin: 10px;
+  font-weight: normal;
+  color: var(--white-color);
+}
+
+.contact__link .link a {
+  color: var(--white-color);
+}
+
+.contact__link .link a:visited {
+  color: var(--white-color);
+}
+
+.contact__mailform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contact__cell {
+  margin: 10px;
+}
+
+.contact__cell .form_label {
+  font-weight: normal;
+  margin: 10px;
+}
+
+.contact__cell .form_input {
+  color: whitesmoke;
+  background: transparent;
+  border-radius: 5px;
+  border: 2px solid whitesmoke;
+}
+
+.contact button {
+  font-family: "Raleway";
+  color: whitesmoke;
+  font-size: 20px;
+  height: inherit;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid whitesmoke;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.contact button:hover, .contact button:focus {
+  background-color: whitesmoke;
+  color: black;
+  -webkit-box-shadow: whitesmoke 10px 10px 10px;
+          box-shadow: whitesmoke 10px 10px 10px;
 }
 
 /*----- MEDIA QUERIES -----*/

@@ -6,11 +6,7 @@
         <link rel="stylesheet" href="assets/css/styles.css">
         <title>Landing page responsive portfolio</title>
     </head>
-    <body>
-        <!-- OVERLAY -->
-        <div class="overlay first"></div>
-        <div class="overlay second"></div>
-        <div class="overlay third"></div>
+    <body style="overflow: hidden;">
 
         <!-- HEADER -->
         <header class="l-header">
@@ -37,19 +33,74 @@
         <!-- MAIN -->
         <main class="l-main bd-grid">
             <div class="contact">
-                <form action="mailto:tilak.tejani@gmail.com" method="post" enctype="text/plain">
-                    
-                    <label class="form_label" for="name">First Name</label>
-                    <input class="form_input" type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                    
-                    <button type="submit">Send</button>
-                </form>
+                <div class="contact__links">
+                    <div class="heading">
+                        Contact
+                    </div>
+                    <div class="contact__link">
+                        <div class="label">
+                            EMAIL
+                        </div>
+                        <div class="link">
+                            <a href="mailto:tilak.tejani@gmail.com">tilak.tejani@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact__link">
+                        <div class="label">
+                            PHONE
+                        </div>
+                        <div class="link">
+                            <a href="tel:+919104360537">+91 9104360537</a>
+                        </div>
+                    </div>
+                    <div class="contact__link">
+                        <div class="label">
+                            SOCIAL
+                        </div>
+                        <div class="link">
+                            <a target="_blank" href="https://twitter.com/TejaniTilak"><ion-icon name="logo-twitter" class="home__social-icon"></ion-icon></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/tilak-tejani/"><ion-icon name="logo-linkedin" class="home__social-icon"></ion-icon></a>
+                            <a target="_blank" href="https://github.com/TilakTejani"><ion-icon name="logo-github" class="home__social-icon"></ion-icon></a>
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone=919104360537"><ion-icon name="logo-whatsapp" class="home__social-icon"></ion-icon></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__mailform">
+
+                    <form action="mailto:tilak.tejani@gmail.com" method="post" enctype="text/plain">
+                        <div class="contact__row">
+                            <div class="contact__cell">
+                                <label class="form_label" for="firstname">First Name</label><br>
+                                <input class="form_input" type="text" id="firstname" name="firstname" required>
+                            </div>
+                            <div class="contact__cell">
+                                <label class="form_label" for="lastname">Last Name</label><br>
+                                <input class="form_input" type="text" id="lastname" name="lastname" required>
+                            </div>
+                        </div>
+                        <div class="contact__row">
+                            <div class="contact__cell">
+                                <label class="form_label" for="email">Email</label><br>
+                                <input class="form_input" type="email" id="email" name="email" required>
+                            </div>
+                            <div class="contact__cell">
+                                <label class="form_label" for="message">Subject</label><br>
+                                <input type="text" class="form_input" id="subject" name="subject" rows="1"></input>
+                            </div>
+                        </div>
+                        <div class="contact__row">
+                            <div class="contact__cell">
+                                <label class="form_label" for="message">Message</label><br>
+                                <textarea class="form_input" id="message" name="message" rows = "4" required></textarea>
+                            </div>
+                        </div>
+                        <div class="contact__row">
+                            <div class="contact__cell">
+                                <button type="submit">Send Mail</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </main>
 
