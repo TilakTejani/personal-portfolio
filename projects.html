@@ -7,11 +7,6 @@
         <title>Landing page responsive portfolio</title>
     </head>
     <body>
-        <!-- OVERLAY -->
-        <div class="overlay first"></div>
-        <div class="overlay second"></div>
-        <div class="overlay third"></div>
-
         <!-- HEADER -->
         <header class="l-header">
             <nav class="nav bd-grid">
@@ -36,27 +31,107 @@
 
         <!-- MAIN -->
         <main class="l-main bd-grid">
-            <div class="home">
-                <div class="home__information">
-                    <span class="home__pressent anime-text">Hello, My name is</span>
-                    <h1 class="home__title anime-text">John Doe</h1>
-                    <span class="home__skill anime-text">Web Developer</span>
-                    
-                    <div>
-                        <a href="#" class="home__button anime-text">DOWNLOAD CV</a>
+            <div class="projects">
+                <div class="projects__section">
+                    <div class="projects__image">
+                        <img src="assets/img/flask.webp" alt="image of flask app with selenium" >
+                    </div>
+                    <div class="projects__description">
+                        <div class="name">Invitation Assistant 
+                            <a href="https://github.com/TilakTejani/InvitationAssistant">
+                                <img class="gh_icon" src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="" srcset="">
+                            </a>
+                        </div>
+                        <div class="time">June 21 - July 21</div>
+                        <div class="list">
+                            <ul>
+                                <li>Made sending invitations easy through whatsapp and selenium.</li>
+                                <li><b><u>Unique: </u></b>Made a pdf editor tool using react and python to write invitees name.</li>
+                                <li>Invitation designers charges <b><u>20x rupees per invitation</u></b>.</li>
+                                <li>Which made easily just using csv file containing data about name and mobile number.</li>
+                                <li>Can send upto <u><b>30 invitations per minute</b></u>.</li>
+                                <li>Now, many event managers uses the tool to send digital invitations.</li>
+                                <li>Technology used: <b><u>Flask, React, Selenium</u></b></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
-                <div class="home__img">
-                    <img src="assets/img/img.jpg" alt="">
+                <hr>
+                <div class="projects__section">
+                    <div class="projects__description">
+                        <div class="name">Algorithms visualization
+                            <a href="https://tilaktejani.github.io/PathFinderMazeVisualizer/">
+                                Path Finding visualization    <img class="gh_icon" src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="" srcset="">
+                            </a>
+                            <div class="verLine"></div>
+                            <a href="https://tilaktejani.github.io/SortingVisualizer/">
+                                Sorting visualization    <img class="gh_icon" src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="" srcset="">
+                            </a>
+                        </div>
+                        <div class="time">May 21 - June 21</div>
+                        <div class="list">
+                            <ul>
+                                <li>" visualization is the best technique to learn and understand "</li>
+                                <li>Different algorithms visualizers using vanillaJS.</li>
+                                
+                                    Algorithms
+                                    <ul style="list-style-type:square;">
+                                        <li>Path Finding Visualizer (Graph algorithms) : A*, Dijkstra, BFS, DFS</li>
+                                        <li>Sorting Algorithms: Quick, Merge, Bubble, Radix, Counting, Comb, Cyclic, Insertion, Selection</li>
+                                    </ul>
+                                <li><b><u>Unique:</u></b> Random Maze Generation using DFS in Path Finding Visualizer with wall removing and adding feature.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="projects__image">
+                        <img src="assets/img/visualizer.jpeg" >
+                    </div>
                 </div>
-                
-                <div class="home__social">
-                    <ion-icon name="logo-facebook" class="home__social-icon"></ion-icon>
-                    <ion-icon name="logo-instagram" class="home__social-icon"></ion-icon>
-                    <ion-icon name="logo-twitter" class="home__social-icon"></ion-icon>
+                <hr>
+                <div class="projects__section">
+                    <div class="projects__image">
+                        <img src="assets/img/walldodger.jpeg" >
+                    </div>
+                    <div class="projects__description">
+                        <div class="name">Wall Dodger AI
+                            <a href="https://tilaktejani.github.io/WallDodger_AI/">
+                                <img class="gh_icon" src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="" srcset="">
+                            </a>
+                        </div>
+                        <div class="time">May 22 - June 22</div>
+                        <div class="list">
+                            <ul>
+                                <li>Real time <b><u>reinforcement learning simulation</u></b> of game.</li>
+                                <li>Implemented simulation environment of <b><u>flappy bird</u></b> using vanillaJS.</li>
+                                <li><b><u>Unique</u></b>A realtime neural network visulizer also implemented using vanillaJS.</li>
+                                <li><b><u>Result:</u></b> More than 4hrs play time without dying after around 70 iterations.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-
+                <hr>
+                <div class="projects__section">
+                    <div class="projects__description">
+                        <div class="name">Q learning based self driving car simulation
+                            <a href="https://tilaktejani.github.io/SelfDrivingCar_QLearning/">
+                                <img class="gh_icon" src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="" srcset="">
+                            </a>
+                        </div>
+                        <div class="time">June 22 - July 22</div>
+                        <div class="list">
+                            <ul>
+                                <li>A simulated environment of car(subject) and traffic implemented using vanillaJS.</li>
+                                <li><b><u>Unique: </u></b> A real time visualization of car sensors.</li>
+                                <li>This sensors reading will be taken as input for decision making.</li>
+                                <li>Used <b><u>TensorflowJS for learning algorithm and chartJS to visualize results upon time</u></b>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="projects__image">
+                        <img src="assets/img/qlearning.jpeg" alt="image of flask app with selenium" width="500" >
+                    </div>
+                </div>
+                <hr>
             </div>
         </main>
 

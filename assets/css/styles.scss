@@ -147,6 +147,27 @@ img{
 .show{
     top: $header-height
 }
+.list{
+    font-weight: normal;
+    .text_header{
+        margin-top:10px;
+        font-size:larger;
+
+    }
+    ul{
+
+        list-style: circle;
+    }
+}
+.gh_icon{
+    width: 40px;
+    height: 40px;
+    background-color:white;
+    border-radius: 50%;
+    // border: 0px solid transparent;
+}
+
+
 /*Home*/
 .l-main{
     margin-top: 50px;
@@ -306,7 +327,7 @@ img{
             height: auto;
             width: 100%;
         }   
-        
+
     }
     &__experiance:nth-child(even)::before{
         content: " ";
@@ -351,16 +372,6 @@ img{
     &__experiance:nth-child(odd)::after{
         left: var(--move-circle);
     }
-    .list{
-        .text_header{
-            margin-top:10px;
-            font-size:larger;
-        }
-        ul{
-
-            list-style: circle;
-        }
-    }
     .skill_list{
         ul{
             list-style: circle;
@@ -395,6 +406,52 @@ img{
     }
 }
 
+.projects{
+    margin-top: 100px;
+    // display: flex;
+    // flex-direction: column;
+    color: white;
+    &__image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 60px;
+        
+    }
+    &__description{
+        margin: 20px;
+        .name{
+            font-size: 30px;
+            display: flex;
+            a{
+                font-size: 15px;
+                font-weight: normal;
+                margin-left: 20px;
+                color: var(--white-color);
+                :visited{
+                    color: var(--white-color);
+                }
+            }
+            .verLine{
+                background-color: white;
+                height: inherit;
+                width: 3px;
+            }
+        }
+        .time{
+            font-weight: normal;
+            font-size: 20px;
+
+        }
+    }
+
+
+}
 /*----- MEDIA QUERIES -----*/
 @media screen and (min-width: 768px){
     body{
