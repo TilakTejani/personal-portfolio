@@ -303,8 +303,7 @@ img {
   margin: 0 auto;
 }
 
-.resume__timeline::after {
-  content: "";
+.resume__timeline__ruler {
   position: absolute;
   width: 6px;
   background-color: var(--ruler-color);
@@ -362,8 +361,7 @@ img {
   margin-left: 30px;
 }
 
-.resume__experiance::after {
-  content: '';
+.resume__experiance__circle {
   position: absolute;
   width: 25px;
   height: 25px;
@@ -388,12 +386,11 @@ img {
   width: 100%;
 }
 
-.resume__experiance:nth-child(even)::before {
-  content: " ";
-  height: 0;
+.resume__experiance:nth-child(even) .resume__experiance__triangle {
+  height: 10px;
   position: absolute;
   top: 32px;
-  width: 0;
+  width: 10px;
   z-index: 1;
   right: 30px;
   border: medium solid var(--border-color);
@@ -414,12 +411,11 @@ img {
   width: 100%;
 }
 
-.resume__experiance:nth-child(odd)::before {
-  content: " ";
-  height: 0;
+.resume__experiance:nth-child(odd) .resume__experiance__triangle {
+  height: 10px;
   position: absolute;
   top: 32px;
-  width: 0;
+  width: 10px;
   z-index: 1;
   left: 30px;
   border: medium solid var(--border-color);
@@ -427,7 +423,7 @@ img {
   border-color: transparent var(--border-color) transparent transparent;
 }
 
-.resume__experiance:nth-child(odd)::after {
+.resume__experiance:nth-child(odd) .resume__experiance__circle {
   left: var(--move-circle);
 }
 
@@ -513,6 +509,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects__description .name a {
@@ -532,7 +531,6 @@ img {
   margin: 10px;
   font-size: 15px;
   font-weight: normal;
-  margin-left: 20px;
   color: var(--white-color);
 }
 
@@ -542,12 +540,6 @@ img {
 
 .projects__description .name a span {
   margin-top: 4px;
-}
-
-.projects__description .name .verLine {
-  background-color: white;
-  height: inherit;
-  width: 3px;
 }
 
 .projects__description .time {

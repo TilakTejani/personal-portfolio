@@ -264,18 +264,16 @@ img{
         font-family:Arial, Helvetica, sans-serif;
         position: relative;
         margin: 0 auto;
-    }
-
-    &__timeline::after{
-        content: "";
-        position: absolute;
-        width: 6px;
-        background-color: var(--ruler-color);
-        border: 1.5px solid var(--border-color);
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        margin-left: -3px;
+        &__ruler{
+            position: absolute;
+            width: 6px;
+            background-color: var(--ruler-color);
+            border: 1.5px solid var(--border-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
     }
 
     &__experiance{
@@ -315,21 +313,19 @@ img{
                     margin-left: 30px;
                 }   
             }
-
         }
-    }
-
-    &__experiance::after{
-        content: '';
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        right: var(--move-circle);
-        background-color: white;
-        border: 4px solid var(--border-color);
-        top: 30px;
-        border-radius: 50%;
-        z-index: 1;
+        &__circle{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: var(--move-circle);
+            background-color: white;
+            border: 4px solid var(--border-color);
+            top: 30px;
+            // right: -10px;
+            border-radius: 50%;
+            z-index: 1;
+        }
     }
 
     &__experiance:nth-child(even){
@@ -344,17 +340,18 @@ img{
         }   
 
     }
-    &__experiance:nth-child(even)::before{
-        content: " ";
-        height: 0;
-        position: absolute;
-        top: 32px;
-        width: 0;
-        z-index: 1;
-        right: 30px;
-        border: medium solid var(--border-color);
-        border-width: 10px 0 10px 10px;
-        border-color: transparent transparent transparent var(--border-color);
+    &__experiance:nth-child(even){
+        .resume__experiance__triangle{
+            height: 10px;
+            position: absolute;
+            top: 32px;
+            width: 10px;
+            z-index: 1;
+            right: 30px;
+            border: medium solid var(--border-color);
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent var(--border-color);
+        }
 
     }
 
@@ -370,23 +367,23 @@ img{
         }   
     }
 
-    &__experiance:nth-child(odd)::before{
-        content: " ";
-        height: 0;
-        position: absolute;
-        top: 32px;
-        width: 0;
-        z-index: 1;
-        left: 30px;
-        border: medium solid var(--border-color);
-        border-width: 10px 10px 10px 0;
-        border-color: transparent var(--border-color) transparent transparent;
-
+    &__experiance:nth-child(odd){
+        .resume__experiance__triangle{
+            height: 10px;
+            position: absolute;
+            top: 32px;
+            width: 10px;
+            z-index: 1;
+            left: 30px;
+            border: medium solid var(--border-color);
+            border-width: 10px 10px 10px 0;
+            border-color: transparent var(--border-color) transparent transparent;
+        }
+        .resume__experiance__circle{
+            left: var(--move-circle)
+        }
     }
 
-    &__experiance:nth-child(odd)::after{
-        left: var(--move-circle);
-    }
     .skill_list{
         ul{
             list-style: circle;
@@ -450,6 +447,7 @@ img{
         .name{
             font-size: 30px;
             display: flex;
+            align-items: center;
             a{
                 display: flex;
                 flex-direction: column;
@@ -458,7 +456,6 @@ img{
                 margin: 10px;
                 font-size: 15px;
                 font-weight: normal;
-                margin-left: 20px;
                 color: var(--white-color);
                 :visited{
                     color: var(--white-color);
@@ -467,11 +464,6 @@ img{
                     margin-top: 4px;
                 }
             }
-            .verLine{
-                background-color: white;
-                height: inherit;
-                width: 3px;
-            }
         }
         .time{
             font-weight: normal;
@@ -479,8 +471,6 @@ img{
 
         }
     }
-
-
 }
 
 .contact{
