@@ -187,6 +187,7 @@ img{
         padding-left: 1.5rem;
         border-left: 5px solid var(--white-color);
         z-index: var(--z-tooltip);
+        width: 65%;
     }
     &__pressent{
         font-size: var(--small-font-size);
@@ -196,6 +197,9 @@ img{
     }
     &__skill{
         font-size: var(--h2-font-size);
+    }
+    &__description{
+        font-weight: normal;
     }
     &__button{
         display: inline-block;
@@ -226,6 +230,11 @@ img{
 
             &:hover{
                 color: var(--first-color)
+            }
+        }
+        a{
+            ion-icon{
+                color: var(--white-color);
             }
         }
     }
@@ -451,6 +460,10 @@ img{
     }
 
 
+}
+
+.contact{
+    
 }
 /*----- MEDIA QUERIES -----*/
 @media screen and (min-width: 768px){
