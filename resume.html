@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Landing page responsive portfolio</title>
+    </head>
+    <body>
+
+        <!-- HEADER -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">tejani</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="/index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item nav_selected_item"><a class="nav__link" disabled>Resume</a></li>
+                        <li class="nav__item"><a href="/projects.html" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="/contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+        <main class="l-main bd-grid">
+            <div class="resume">
+                <div class="resume__section">
+                    <div class="resume__section__heading">
+                       Work Experiance
+                    </div>
+                    <div class="resume__timeline">
+                        <div class="resume__experiance">
+                            <div class="resume__experiance__content">
+                                <div class="resume__experiance__content__time">Aug 23 - Present</div>
+                                <div class="resume__experiance__content__place">
+                                    <div class="logo"><a href="https://www.db.com/index?language_id=1&kid=sl.redirect-en.shortcut" target="_blank">
+                                        <img src="assets/img/db_logo.png" alt="Deutsche Bank Logo" height="70" width="70"></a>
+                                    </div>
+                                    <div class="company">Deutsche Bank</div>
+                                    <div class="location">Bangalor, India (Hybrid)</div>
+                                    <div class="role">Tech Analyst</div>
+                                    <div class="description">Worked in team of CI/CD pipeline using GitHub Actions for Spring Boot applications in a monorepo. Deployed and managed scalable environments on Google Cloud Platform (GCP), developed automation scripts for build, test, and deployment processes enhancing productivity, collaborated with cross-functional teams for high-quality code delivery and integrated monitoring solutions, achieved increase in team productivity through optimized workflows</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume__experiance">
+                            <div class="resume__experiance__content">
+                                <div class="resume__experiance__content__time">Jan 23 - July 23</div>
+                                <div class="resume__experiance__content__place">
+                                    <div class="logo"><a href="https://www.d360.tech/" target="_blank" >
+                                        <img src="assets/img/d360_logo.png" alt="D360 Inc Logo" height="70" width="70"></a>
+                                    </div>
+                                    <div class="company">D360&#176 Tech Inc</div>
+                                    <div class="location">New York (Remote)</div>
+                                    <div class="role">Software Developer Intern</div>
+                                    <div class="description">Developed an assistant app on Google Cloud Platform using React and Flask to analyze diamond data, integrated GCP services for data storage and processing, created interactive dashboards for real-time visualization, implemented secure APIs for data retrieval, collaborated with data scientists for accurate analytics, and optimized performance for improved decision-making and efficiency.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr width="100%">
+                <div class="resume__section">
+                    <div class="resume__section__heading">
+                        Education
+                    </div>
+                    <div class="resume__timeline">
+                        <div class="resume__experiance">
+                            <div class="resume__experiance__content">
+                                <div class="resume__experiance__content__time">
+                                    Aug 19 - May 23</div>
+                                <div class="resume__experiance__content__place">
+                                    <div class="company">Bachelor's Degree in Computer Science</div>
+                                    <div class="location">Institue of Technology, Nirma University</div>
+                                    <div class="location">Ahmedabad, India</div>
+                                    <div class="role"> CGPA- 8.1/10 </div>
+                                    <div class="list">
+                                        <div class="text_header">Course Work</div>
+                                        <ul>
+                                            <li>Data Structures And Algorithms</li>
+                                            <li>Discrete Mathematics</li>
+                                            <li>Advanced Data Structures</li>
+                                            <li>Operating Systems</li>
+                                            <li>Object Oriented Programming</li>
+                                            <li>Database Management Systems</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <hr width="100%">
+                <div class="resume__section">
+                    <div class="resume__section__heading">
+                        Skills & Expertise
+                    </div>
+                    <div class="skill_list">
+                        <div class="text_header">Programming</div>
+                        <ul>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>Java / <S></S>pringboot</li>
+                            <li>NodeJS</li>
+                            <li>React</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="skill_list">
+                        <div class="text_header">VSC / Build Tools / Cloud Services</div>
+                        <ul>
+                            <li>Git</li>
+                            <li>Github Actions</li>
+                            <li>Bazel (monorepo pareller build tool )</li>
+                            <li>Google Cloud Platform</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr width="100%">
+            </div>
+        </main>
+        <footer class="l-footer">
+
+        </footer>
+
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+        <!-- MAIN -->
+        <script src="assets/js/main.js"></script>
+    
+        <!-- ICONS -->
+        <script  type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    </body>
+</html>
