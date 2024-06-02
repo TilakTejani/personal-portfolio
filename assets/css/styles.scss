@@ -425,7 +425,13 @@ img{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 50px;
+        // margin: 50px;
+        object-fit: fill;
+        min-width: 360px;
+        img{
+            width: 360px;
+            height: 240px;
+        }
     }
     &__section{
         display: flex;

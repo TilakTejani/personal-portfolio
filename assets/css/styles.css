@@ -474,7 +474,14 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 50px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  min-width: 360px;
+}
+
+.projects__image img {
+  width: 360px;
+  height: 240px;
 }
 
 .projects__section {
