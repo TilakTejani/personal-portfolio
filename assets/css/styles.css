@@ -206,6 +206,7 @@ img {
   row-gap: 2.3rem;
   height: 100%;
   font-weight: 700;
+  overflow: hidden;
 }
 
 .home__information {
@@ -701,9 +702,6 @@ img {
   .home__img {
     width: 553px;
     right: 5%;
-  }
-  .home__description {
-    width: 100px;
   }
 }
 

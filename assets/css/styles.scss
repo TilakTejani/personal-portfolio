@@ -183,6 +183,7 @@ img{
     row-gap: 2.3rem;
     height: 100%;
     font-weight: $font-bold;
+    overflow: hidden;
     
     &__information{
         padding-left: 1.5rem;
@@ -591,9 +592,6 @@ img{
         &__img{
             width: 553px;
             right: 5%;
-        }
-        &__description{
-            width: 100px;
         }
     }
 }
